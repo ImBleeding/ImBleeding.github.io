@@ -1,7 +1,5 @@
-/* LIGHT BOX */
-
 body:after {
-  content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
+  content: url(../img/1.png) url(../img/2.png) url(../img/3.png) url(../img/4.png);
   display: none;
 }
 
