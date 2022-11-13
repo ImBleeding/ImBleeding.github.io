@@ -1,78 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="style.css">
-<style>
-body {font-family:"Times New Roman", serif}
-h1,h2,h3,h4,h5,h6 {font-family:serif; letter-spacing:5px}
-</style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    
+
 </head>
 <body>
- 
-  <div id="navbar">
-    <a id="logo">Erdem's</a>
-    <div id="navbar-right">
-      <a href="#contact">İletişim</a>
-    </div>
-  </div>
-
-
-<div id="home" class="w3-content">
-       
-  <div>   
-     <center><img src="img/1.png" alt="Catering" style="width:90%"></center>
-  </div>
-  
-  <br>
-  <h1 style="border: 1px solid #656565;"></h1>
-  <br>
-  
-  <div >
-     <center> <img src="img/2.png" alt="Catering" style="width:90%"></center>
-  </div>
-  
-  <br>
-  <h1 style="border: 1px solid #656565;"></h1>
-  <br>
-  
-  <div>
-      <center><img src="img/3.png" alt="Catering" style="width:90%"></center>
-  </div>
-  
-  <br>
-  <h1 style="border: 1px solid #656565;"></h1>
-  <br>
-  
-  <footer>
-          <div class="container-fluid">
-              <div class="col-md-12">
-                  <center><p style="">Copyright &copy; 2022 ErSoft
-      
-      | Designed by Lethe</p></center>
-      
-              </div>
-          </div>
-      </footer>
-  <!-- End Content -->
-  </div>
-
-<script>
-// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("navbar").style.padding = "25px 10px";
-    document.getElementById("logo").style.fontSize = "20px";
-  } else {
-    document.getElementById("navbar").style.padding = "50px 10px";
-    document.getElementById("logo").style.fontSize = "25px";
-  }
-}
-</script>
-
+    <div class="arkaplan"></div>
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo1.png" width="65px" height="65px">
+        </a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
 </body>
 </html>
