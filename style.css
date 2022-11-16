@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-*
+big{
+    position: relative;
+    top: 200px;
+    left: 130px;
+    color: #fff;
+}
+span{
+    position: relative;
+    color: #fff;
+    top: 200px;
+}
+ul {overflow:hidden;}
+ul li {float:left; margin-right:20px;}
+ul li img {border:2px solid #000;}
+.clear {clear: both}
+
+button{
+    position: relative;
+    left: 690px;
+    top: 300px;
+    background:transparent url(img/icon.png);
+    width: 40px;
+    height: 40px;
+}
+@media screen and (min-width: 960px){
+    *
 {
     margin: 0;
     padding: 0;
@@ -69,27 +94,92 @@ header.sticky ul li a{
     background-position:center center;
     background-size: cover;    
 }
-big{
-    position: relative;
-    top: 200px;
-    left: 130px;
-    color: #fff;
+img.resim {
+    width: 460px;
+    height: 500px;
 }
-span{
-    position: relative;
-    color: #fff;
-    top: 200px;
 }
-ul {overflow:hidden;}
-ul li {float:left; margin-right:20px;}
-ul li img {border:2px solid #000;}
-.clear {clear: both}
+@media screen and (min-width: 960px) and (max-width: 1365px){
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #000;
+    min-height: 200vh;
+    max-width: 940px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+}
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;   
+}
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
 
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000;
+}
+.arkaplan{
+
+    min-height: 940px;
+    min-height: 800px;
+    opacity: 1;
+    background-color:#000;
+    background-image:url(img/xxx.jpg);
+    background-position:center center;
+    background-size: cover;    
+}
 button{
     position: relative;
-    left: 690px;
+    left: 470px;
     top: 300px;
     background:transparent url(img/icon.png);
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
+}
+img.resim {
+    width: 290px;
+    height: 375px;
+}
 }
